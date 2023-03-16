@@ -1,0 +1,6 @@
+.products_title-wrap{
+    text-transform: uppercase;
+}
+.title-accent-color{
+    color: var(--accent-color);
+}
