@@ -1,12 +1,16 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
+@import url('./global.css');
 @import url('./header.css');
-
-:root {
-  
-}
+@import url('./hero.css');
+@import url('./advantages.css');
+@import url('./how-made.css');
+@import url('./products.css');
+@import url('./sellers.css');
+@import url('./reviews.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
+@import url('./modal-buy.css');
+@import url('./modal-explore.css');
+@import url('./modal-feedback.css');
+@import url('./modal-review.css');
+@import url('./modal-thank.css');
