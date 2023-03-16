@@ -77,6 +77,13 @@
     margin: 0 auto 24px;
     max-width: 457px;
   }
+  .subscribe-btn {
+    width: 172px;
+    height: 50px;
+    
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
 }
 
 @media screen and (min-width: 1200px) {
