@@ -1,9 +1,69 @@
 .how-made{
-
+    background-color: #fafafa;
+margin-bottom: 72px;
 }
 .how-made-title{
+    margin-bottom: 32px;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+    
+        color: #111111;
 
 }
+.how-made-span {
+    color: #FD9222;
+}
 .how-made-video{
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pastry-chef-preparing-chocolate-cake.jpg);
+border-radius: 15px;
 height: 500px;
+width: 100%;
+margin-bottom: 20px;
+}
+.how-made-card{
+background-color: #FFFFFF;
+border-radius: 15px;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 14px;
+padding-right: 14px;
+
+}
+.how-made-caption{
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.33;
+        color: #111111;
+        
+
+}
+.how-made-list{
+    list-style-position:outside;
+    list-style-type: initial;
+    padding-left: 14px;
+
+    
+
+}
+.how-made-list-title{
+font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #111111;
+    margin-bottom: 18px;
+}
+.how-made-list-title:last-child{
+    margin-bottom: 0;
 }
