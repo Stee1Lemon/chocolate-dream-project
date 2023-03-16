@@ -1,0 +1,12 @@
+.header-logo-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    color: #111111;
+}
+
+.header-logo-style {
+    font-style: italic;
+}
