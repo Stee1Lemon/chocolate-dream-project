@@ -2,6 +2,7 @@
 :root {
   --main-bg-color: #ffffff;
   --secondary-bg-color: #1e1823;
+  --secondary-text-color: #ffffff;
   --accent-color: #fd9222;
   --focus-color: #fcf1e0;
   --text-animation: cubic-bezier(0.23, 0.86, 0.79, 0.77);
