@@ -1,6 +1,10 @@
 :root {
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
