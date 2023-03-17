@@ -1,9 +1,10 @@
 .subscribe {
   padding: 62px 0 63px;
-
+  margin: 0 auto;
   background: rgb(74, 66, 66) url(/img/subscribe/mobile-subscribe-1x.jpg)
     no-repeat center;
-  background-size: 375px;
+  background-size: cover;
+  max-width: 375px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -12,7 +13,8 @@
   .subscribe {
     background: rgb(74, 66, 66) url(/img/subscribe/mobile-subscribe-2x.jpg)
       no-repeat center;
-    background-size: 375px;
+    max-width: 375px;
+    background-size: cover;
   }
 }
 
@@ -79,7 +81,7 @@
 
     background: rgb(74, 66, 66) url(/img/subscribe/tablet-subscribe-1x.jpg)
       no-repeat center;
-    background-size: 768px;
+    max-width: 768px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -88,7 +90,7 @@
     .subscribe {
       background: rgb(74, 66, 66) url(/img/subscribe/tablet-subscribe-2x.jpg)
         no-repeat center;
-      background-size: 768px;
+      max-width: 768px;
     }
   }
 
@@ -116,7 +118,7 @@
   .subscribe {
     background: rgb(74, 66, 66) url(/img/subscribe/desc-subscribe-1x.jpg)
       no-repeat center;
-    background-size: 1200px;
+    max-width: 1200px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -124,7 +126,7 @@
     .subscribe {
       background: rgb(74, 66, 66) url(/img/subscribe/desc-subscribe-2x.jpg)
         no-repeat center;
-      background-size: 1200px;
+      max-width: 1200px;
     }
   }
 }
