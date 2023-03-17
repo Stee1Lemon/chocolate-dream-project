@@ -77,32 +77,38 @@
     margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px){
-    .how-made > .container{
+@media screen and (min-width: 768px) {
+    .how-made>.container {
         width: 614px;
 
     }
-    .how-made-title{
+
+    .how-made-title {
         margin-bottom: 50px;
     }
-    .how-made-video{
+
+    .how-made-video {
         height: 400px;
     }
-    .how-made-card{
+
+    .how-made-card {
         padding: 32px;
     }
 
 }
-@media screen and (min-width: 1200px){
+
+@media screen and (min-width: 1200px) {
     .how-made>.container {
         width: 1200px;
     }
-    .how-made-flex{
+
+    .how-made-flex {
         display: flex;
         gap: 20px;
         margin-bottom: 128px;
     }
-    .how-made-video{
+
+    .how-made-video {
         margin-bottom: 0;
     }
 }
