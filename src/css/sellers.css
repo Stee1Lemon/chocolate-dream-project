@@ -1,0 +1,11 @@
+.sellers-tittle-text {
+  color: var(--accent-color);
+}
+.sellers-tittle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
