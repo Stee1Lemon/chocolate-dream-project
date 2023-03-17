@@ -27,19 +27,7 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-/* -----------Тимчасова шапка---------- */
-.global-info {
-  padding: 30px;
-  margin: 30px;
-  font-size: 25;
-  color: white;
-  background-color: rgb(0, 0, 0);
-}
-.read-team {
-  color: #fd9222;
-}
 
-/* ---------------------------------------- */
 .container {
   margin: 0 auto;
   outline: 2px solid #0801d2;
