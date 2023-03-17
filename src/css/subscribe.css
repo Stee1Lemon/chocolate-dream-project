@@ -1,15 +1,16 @@
 .subscribe {
   padding: 62px 0 63px;
-
+}
+.subscribe-field {
+  padding: 62px 0 63px;
   background: rgb(74, 66, 66) url(/img/subscribe/mobile-subscribe-1x.jpg)
     no-repeat center;
   background-size: 375px;
 }
-
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .subscribe {
+  .subscribe-field {
     background: rgb(74, 66, 66) url(/img/subscribe/mobile-subscribe-2x.jpg)
       no-repeat center;
     background-size: 375px;
@@ -76,16 +77,16 @@
 @media screen and (min-width: 768px) {
   .subscribe {
     padding: 72px 0;
-
+  }
+  .subscribe-field {
     background: rgb(74, 66, 66) url(/img/subscribe/tablet-subscribe-1x.jpg)
       no-repeat center;
     background-size: 768px;
   }
-
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .subscribe {
+    .subscribe-field {
       background: rgb(74, 66, 66) url(/img/subscribe/tablet-subscribe-2x.jpg)
         no-repeat center;
       background-size: 768px;
@@ -113,7 +114,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .subscribe {
+  .subscribe-field {
     background: rgb(74, 66, 66) url(/img/subscribe/desc-subscribe-1x.jpg)
       no-repeat center;
     background-size: 1200px;
@@ -121,7 +122,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .subscribe {
+    .subscribe-field {
       background: rgb(74, 66, 66) url(/img/subscribe/desc-subscribe-2x.jpg)
         no-repeat center;
       background-size: 1200px;
