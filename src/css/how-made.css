@@ -96,7 +96,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .how-made>.container {
+    .how-made > .container {
         width: 614px;
 
     }
@@ -131,7 +131,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .how-made>.container {
+    .how-made > .container {
         width: 1200px;
     }
 
