@@ -18,7 +18,7 @@
     line-height: 1.29;
     text-transform: uppercase;
     letter-spacing: -0.03em;
-    color: #111111;
+    color: var(--text-color);
 }
 
 .header-logo-style {
@@ -43,7 +43,7 @@
     border: none;
     padding: 0;
     line-height: 0;
-    stroke: #111111;
+    stroke: var(--text-color);
 }
 
 .header-mobile-menu-open-icon {
@@ -253,7 +253,7 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: -0.02em;
-        color: #111111;
+        color: var(--text-color);
         transition: var(--hover-animation);
     }
 
@@ -269,7 +269,7 @@
     }
 
     .header-soc-link {
-        color: #111111;
+        color: var(--text-color);
     }
 
 }
