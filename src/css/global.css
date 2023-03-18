@@ -3,7 +3,7 @@
   --main-bg-color: #ffffff;
   --secondary-bg-color: #1e1823;
   --secondary-text-color: #ffffff;
-  --soft-color: #FAFAFA;
+  --soft-color: #fafafa;
   --text-color: #111111;
   --accent-color: #fd9222;
   --focus-color: #fcf1e0;
@@ -15,7 +15,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-.title{
+.title {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.1;
@@ -36,6 +36,10 @@ body {
 .container {
   margin: 0 auto;
   outline: 2px solid #0801d2;
+}
+
+.rad-img {
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 375px) {
