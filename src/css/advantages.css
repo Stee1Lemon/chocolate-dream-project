@@ -12,6 +12,10 @@
   display: none;
 }
 
+.advantages-list {
+  list-style: none;
+}
+
 .advantages-item:not(:last-child) {
   margin-bottom: 30px;
 }
