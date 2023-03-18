@@ -9,12 +9,127 @@
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
-.sellers-product-item {
+.sellers-img {
   border-radius: 15px;
+}
+.sellers-product {
+  margin-bottom: 32px;
 }
 .sellers-product-list {
   display: flex;
-  gap: 24px;
-  border-radius: 15px;
+  gap: 16px;
+  flex-direction: column;
+}
+.sellers-text {
+  width: 407px;
+  height: 72px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+
+  letter-spacing: -0.02em;
+
+  color: var(--text-color);
+}
+.sellers-info {
+  display: flex;
+  justify-content: center;
+}
+.sellers-text-mobile {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+
+  letter-spacing: -0.02em;
+  max-width: 306px;
+  height: 90px;
+}
+
+/* Sellers-btn */
+.sellers-btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--secondary-text-color);
+  padding: 12px 28px;
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: var(--hover-animation);
+
+  min-width: 120px;
+  max-height: 41px;
+}
+.sellers-btn:is(:hover, :focus) {
+  background-color: var(--focus-color);
+  color: var(--accent-color);
+}
+@media screen and (max-width: 374px) {
+  .sellers-text {
+    display: none;
+  }
+
+  .sellers-info {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .sellers-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) {
+  .sellers-img {
+    width: 335px;
+    height: 464px;
+  }
+  .sellers-product-list {
+    flex-direction: column;
+  }
+
+  .sellers-text {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sellers-img {
+    width: 344px;
+    height: 464px;
+  }
+  .sellers-text {
+    display: block;
+    width: 306px;
+    height: 90px;
+  }
+  .sellers-product-list {
+    flex-direction: row;
+  }
+  .sellers-text-mobile {
+    display: none;
+  }
+  .sellers-info {
+    justify-content: space-between;
+  }
+  .sellers-btn {
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 14px 40px;
+    max-height: 50px;
+    min-width: 162px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sellers-img {
+    width: 368px;
+    height: 464px;
+  }
 }
