@@ -26,6 +26,19 @@
     width: 100%;
     margin-bottom: 20px;
 }
+.video-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .how-made-svg{
     position: absolute;
     top: 50%;
@@ -43,6 +56,26 @@
 .how-made-play{
     fill: #F5F4F4;
 }
+.youtube-video .ytp-large-play-button {
+    display: none;
+}
+.youtube-video .ytp-button:before {
+    content: '';
+    background-image: url('path/to/your/custom/play-button.png');
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.youtube-video .how-made-btn:focus {
+    display: none;
+}       
 @media screen and (min-width: 768px) {
     .how-made-svg{
         width: 44px;
