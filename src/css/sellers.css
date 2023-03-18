@@ -1,5 +1,6 @@
 .sellers-tittle-text {
   color: var(--accent-color);
+  margin-right: 8px;
 }
 .sellers-tittle {
   font-weight: 600;
@@ -9,8 +10,8 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
-/* .sellers-product-item {
-  display: block;
-  background-image: url(../img/sellers/desktop-sellers1.jpg);
+.sellers-product-item {
+  display: flex;
+  gap: 24px;
   border-radius: 15px;
-} */
+}
