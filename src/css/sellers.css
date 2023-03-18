@@ -11,6 +11,9 @@
   text-transform: uppercase;
 }
 .sellers-product-item {
+  border-radius: 15px;
+}
+.sellers-product-list {
   display: flex;
   gap: 24px;
   border-radius: 15px;
