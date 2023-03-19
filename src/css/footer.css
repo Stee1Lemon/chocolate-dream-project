@@ -1,28 +1,23 @@
-
-
 .footer {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 20px;
-  
+
     background-color: var(--secondary-bg-color)
-}
-.footer-container {
-  
 }
 .footer-logo {
     display: block;
     padding-right: 55px;
-    max-width: 300px
-    
- }
-.footer-logan-text {
-    
-    color: #FFFFFF;
+    max-width: 300px;
+    margin-bottom: 32px;
 }
 
+.footer-logan-text {
+
+    color: #FFFFFF;
+}
 .footer-text-accent {
-    
+
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
@@ -30,66 +25,34 @@
 
     color: #FD9222;
 }
-
-
 .footer-address-text {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29px;
     margin-bottom: 14px;
-            
+
     color: #FFFFFF;
-}
-.footer-address-item {
-  }      
-.footer-address-list {
-   display: block;
-   margin-bottom: 32px;
 }
 .address-tel-link {
-    
+
     font-style: normal;
     font-size: 14px;
     line-height: 1.29px;
     letter-spacing: -0.02em;
     color: #FFFFFF;
-}   
+}
+
 .address-mail-link {
-    
+
     font-style: normal;
     font-size: 14px;
     line-height: 1.29px;
     letter-spacing: -0.02em;
-    
-    color: #FFFFFF;
-    
-}
-     
-.footer-soc-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 32px;
-    
-}  
-.footer-address{
-    
-} 
-.footer-address::after {
-    content: "";
-    height: 1px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    display: block;
    
+    color: #FFFFFF;
+
 }
-
-.footer-soc-list {
-    display: flex;
-  
- }
-
 .footer-soc-item {
 
     width: 22px;
@@ -97,34 +60,57 @@
 }
 
 .footer-soc-link {
+    
     color: #FFFFFF;
-           
+
 }
 
 .footer-soc-icon {
     stroke: currentColor;
 }
-.footer-container {
 
- 
-}
-.footer-menu-section {
-    margin-top: 32px;
-   
-}
-
-.footer-list {
-    
-    
-}
 .footer-menu-item:not(:last-child) {
     margin-bottom: 18px;
+    
 }
+
 .footer-menu-link {
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: -0.02em;
 
     color: #FFFFFF;
+}
+
+.flex-div {
+    
+    display: flex;
+    flex-direction: column;
+    
+ 
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+
+  
+}
+.tumb {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+.page-links {
+    padding-top: 32px;
+}
+
+.menu-item::before {
+    content: "";
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
 }
