@@ -16,11 +16,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--soft-color);
 }
-.title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.1;
-}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
