@@ -81,10 +81,6 @@
     column-gap: 0;
   }
 
-  /* .advantages-list:nth-child(2n) {
-    align-items: center;
-  } */
-
   .advantages-item {
     width: calc((100% - 176px) / 3);
     position: relative;
