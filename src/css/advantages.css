@@ -8,10 +8,6 @@
   background: var(--secondary-bg-color);
 }
 
-.advantages-heading {
-  display: none;
-}
-
 .advantages-item:not(:last-child) {
   margin-bottom: 30px;
 }
