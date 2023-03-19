@@ -9,17 +9,17 @@
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .sellers-img {
   border-radius: 15px;
 }
 .sellers-product {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 .sellers-product-list {
   display: flex;
-  gap: 16px;
+
   flex-direction: column;
 }
 .sellers-text {
@@ -48,6 +48,8 @@
   letter-spacing: -0.02em;
   max-width: 306px;
   height: 90px;
+  margin-top: 20px;
+  margin-bottom: 32px;
 }
 
 /* Sellers-btn */
@@ -111,6 +113,7 @@
   }
   .sellers-product-list {
     flex-direction: row;
+    gap: 16px;
   }
   .sellers-text-mobile {
     display: none;
@@ -124,6 +127,12 @@
     padding: 14px 40px;
     max-height: 50px;
     min-width: 162px;
+  }
+  .sellers-tittle {
+    margin-bottom: 50px;
+  }
+  .sellers-product {
+    margin-bottom: 32px;
   }
 }
 
