@@ -3,17 +3,23 @@
 .footer {
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 20px;
   
     background-color: var(--secondary-bg-color)
 }
-
-.footer-container {}
-
-.footer-logan-text {
-    color: var(#FFFFFF);
+.footer-container {
+  
 }
-
-
+.footer-logo {
+    display: block;
+    padding-right: 55px;
+    max-width: 300px
+    
+ }
+.footer-logan-text {
+    
+    color: #FFFFFF;
+}
 
 .footer-text-accent {
     
@@ -25,21 +31,33 @@
     color: #FD9222;
 }
 
-.footer-address {}
 
 .footer-address-text {
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29px;
+    margin-bottom: 14px;
             
     color: #FFFFFF;
 }
-
-.footer-address-list {}
-
-.footer-address-item {}
-
+.footer-address-item {
+  }      
+.footer-address-list {
+   display: block;
+   margin-bottom: 32px;
+}
+.address-tel-link {
+    
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.29px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}   
 .address-mail-link {
+    
+    font-style: normal;
     font-size: 14px;
     line-height: 1.29px;
     letter-spacing: -0.02em;
@@ -47,38 +65,66 @@
     color: #FFFFFF;
     
 }
-
-.address-tel-link {
-    font-size: 14px;
-    line-height: 1.29px;
-    letter-spacing: -0.02em;
+     
+.footer-soc-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 32px;
     
-        color: #FFFFFF;
+}  
+.footer-address{
+    
+} 
+.footer-address::after {
+    content: "";
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+   
 }
 
-.footer-soc-list {}
+.footer-soc-list {
+    display: flex;
+  
+ }
 
 .footer-soc-item {
+
     width: 22px;
     height: 22px;
 }
 
 .footer-soc-link {
     color: #FFFFFF;
-    border: 1.5px solid #FFFFFF;
-   
-    
+           
 }
 
 .footer-soc-icon {
     stroke: currentColor;
 }
 .footer-container {
-    content:"";
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transform: rotate(180deg);
-}
-.footer-title-section {}
 
-.footer-list {}
+ 
+}
+.footer-menu-section {
+    margin-top: 32px;
+   
+}
+
+.footer-list {
+    
+    
+}
+.footer-menu-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+.footer-menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+}
