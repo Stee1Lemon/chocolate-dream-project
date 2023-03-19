@@ -141,7 +141,13 @@
     </h2>
     <div class="hero-global-btn">
       <div class="hero-btn-block">
-        <button type="button" class="hero-btn" data-modal-open>Buy now</button>
+        <button
+          type="button"
+          class="hero-btn js-open-modal"
+          data-modal="modal-buy"
+        >
+          Buy now
+        </button>
         <a href="#how-made" class="hero-btn hero-btn-link">How it’s made</a>
       </div>
       <a href="#footer" class="hero-scroll"
@@ -343,7 +349,7 @@
   </div>
 </section>
 
-    <section class="how-made">
+    <section class="how-made" id="how-made">
     <div class="container">
         <h2 class="how-made-title" id="how-made">HOW IT&rsquo;S <span class="title-accent-color">MADE&quest;</span></h2>
         <div class="how-made-flex">
@@ -380,7 +386,7 @@
         </div>
     </div>
 </section>
-    <section class="products">
+    <section class="products" id="products">
   <div class="container">
     <div class="products_title-wrap">
       <h2 class="title products_title">Our</h2>
@@ -503,7 +509,7 @@
   </div>
 </section>
 
-    <section class="sellers">
+    <section class="sellers" id="sellers">
   <div class="container">
     <h2 class="sellers-tittle">
       <span class="sellers-tittle-text">TOP</span>SELLERS
@@ -553,7 +559,7 @@
           bean called Cacao. Cacao has been around for thousands of years and
           was first discovered by the Native American tribe called the Mayans.
         </p>
-        <button type="button" class="sellers-btn" data-modal-open>
+        <button type="button" class="sellers-btn js-open-modal" data-modal="modal-buy">
           Buy now
         </button>
       </div>
@@ -561,46 +567,57 @@
   </div>
 </section>
 
-    <section class="our_section">
-    <div class="container">
-      <a class="our_section__visually-hidden" href="./index.html"
-            >Chocolate<span class="logo__dark"> is loved</span></a>
-
-      <ul class="list">
-        <li class="our_section__items">
-          <div class="our_section__svg">
-            <img class="ava" src="./img/reviews/victory_ava.png" alt="ava">
-            <h3 class="our_section__title-section">Victoria Dobrzhanska</h3>
-          </div>
-
-          <p class="our_section__paragraf">
-            I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.
-          </p>
-        </li>
-      </ul>
-      <div class="pagination">
-        <span class="pag__active"></span>
-        <span class="pag__pass"></span>
-        <span class="pag__pass"></span>
-        <span class="pag__pass"></span>
-      </div>
-    </div>
-  </section>
-
-    <section class="subscribe">
+    <section class="our_section" id="reviews">
   <div class="container">
-      <h2 class="subscribe-title">Explore our new chocolate first</h2>
-      <p class="subscribe-text">
-        From the velvety texture to the rich and complex flavor, our New
-        Chocolate is a true indulgence that will leave you craving more. Made
-        with only the finest ingredients and handcrafted with the utmost care,
-        each piece is a work of art that is sure to please.
-      </p>
-      <button type="button" class="subscribe-btn" data-menu-open>Subscribe</button>
+    <a class="our_section__visually-hidden" href="./index.html"
+      >Chocolate<span class="logo__dark"> is loved</span></a
+    >
+
+    <ul class="list">
+      <li class="our_section__items">
+        <div class="our_section__svg">
+          <img class="ava" src="./img/reviews/victory_ava.png" alt="ava" />
+          <h3 class="our_section__title-section">Victoria Dobrzhanska</h3>
+        </div>
+
+        <p class="our_section__paragraf">
+          I love this chocolate bar. Perfect combination of light crispy wafer,
+          covered in a thin layer chocolate.
+        </p>
+      </li>
+    </ul>
+    <div class="pagination">
+      <span class="pag__active"></span>
+      <span class="pag__pass"></span>
+      <span class="pag__pass"></span>
+      <span class="pag__pass"></span>
+    </div>
+    <button type="button" class="js-open-modal" data-modal="modal-review">
+      Leave a review
+    </button>
   </div>
 </section>
 
-    <footer class="footer">
+    <section class="subscribe">
+  <div class="container">
+    <h2 class="subscribe-title">Explore our new chocolate first</h2>
+    <p class="subscribe-text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button
+      type="button"
+      class="subscribe-btn js-open-modal"
+      data-modal="modal-explore"
+    >
+      Subscribe
+    </button>
+  </div>
+</section>
+
+    <footer class="footer" id="footer">
     <div class="container footer-container">
         <p class="footer-logan-text"><span class="footer-text-accent">Chocolatea</span> delicious cure for a bad day</p>
     <address class="footer-address">
@@ -648,11 +665,83 @@
     
 
 </footer>
-    
-    
-    
-    
-    
+    <!-- Кнопка в hero та sellers -->
+<div class="modal" data-modal="modal-buy">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">Buy now modal-buy</p>
+  <button type="submit" class="js-open-modal" data-modal="modal-thank">go to thank modal</button>
+</div>
+
+    <!-- Кнопка в subscribe -->
+<div class="modal" data-modal="modal-explore">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">Subscribe modal</p>
+</div>
+
+    <!-- Кнопка в reviews -->
+<div class="modal" data-modal="modal-review">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">Review modal</p>
+    <button type="submit" class="js-open-modal" data-modal="modal-feedback">go to feedback modal</button>
+</div>
+
+    <!-- Кнопка в review -->
+<div class="modal" data-modal="modal-feedback">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">Feedback modal</p>
+</div>
+
+    <!-- Кнопка в Buy now -->
+<div class="modal" data-modal="modal-thank">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">Thank you modal</p>
+</div>
+
 
     <!-- підключення JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
