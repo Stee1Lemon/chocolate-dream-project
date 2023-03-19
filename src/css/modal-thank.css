@@ -1,0 +1,117 @@
+/* .backdrop.is-hidden .modal-thank {
+    transform: translate(-50%, -50%) scale(1.1);
+} */
+
+.modal-thank {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 311px;
+    height: 350px;
+    background-color: #FD9222;
+    background-image: url(/img/modal-thank/mobile-modal-thank.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    border-radius: 15px;
+    transition: transform 250ms linear;
+    padding: 84px 24px 170px 68px;
+}
+
+.modal-thank-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    background: #FCF1E0;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms linear;
+}
+
+.modal__cross{
+    width: 16px;
+    height: 16px;
+    stroke: #F16529;
+    
+}
+
+.modal-thank-close-btn:hover,
+.modal-thank-close-btn:focus {
+    background-color: #FFFFFF;
+}
+
+.modal-thank-close-btn:hover .modal__cross,
+.modal-thank-close-btn:focus .modal__cross {
+    stroke: #111111;
+}
+
+.modal__title {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FCF1E0;
+    margin-bottom: 8px;
+}
+
+.modal-thank-text {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .modal-thank {
+        background-image: url(/img/modal-thank/mobile-modal-thank@2x.png);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 516px;
+        height: 414px;
+        background-image: url(/images/modal/tablet-modal-thank.png);
+        padding: 154px 44px 154px 163px;
+    }
+
+    .modal-thank-close-btn {
+        top: 24px;
+        right: 24px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .modal__cross {
+        width: 22px;
+        height: 22px;
+    }
+
+    .modal__title {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+
+    .modal-thank-text {
+        font-size: 18px;
+        line-height: 1.33;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .modal-thank {
+        background-image: url(/img/modal-thank/tablet-modal-thank@2x.png);
+    }
+}
