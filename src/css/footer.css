@@ -1,9 +1,8 @@
 .footer {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 20px;
-
-    background-color: var(--secondary-bg-color)
+    
+    background-color: var(--secondary-bg-color);
 }
 .footer-logo {
     display: block;
@@ -14,7 +13,7 @@
 
 .footer-logan-text {
 
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
 }
 .footer-text-accent {
 
@@ -23,7 +22,7 @@
     line-height: 1.17;
     letter-spacing: -0.02em;
 
-    color: #FD9222;
+    color: var(--accent-color);
 }
 .footer-address-text {
     font-style: normal;
@@ -32,25 +31,25 @@
     line-height: 1.29px;
     margin-bottom: 14px;
 
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
 }
 .address-tel-link {
-
+    margin-bottom: 4px;
+    display: inline-block;
     font-style: normal;
     font-size: 14px;
     line-height: 1.29px;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
 }
 
 .address-mail-link {
-
     font-style: normal;
     font-size: 14px;
     line-height: 1.29px;
     letter-spacing: -0.02em;
    
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
 
 }
 .footer-soc-item {
@@ -61,7 +60,7 @@
 
 .footer-soc-link {
     
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
 
 }
 
@@ -81,7 +80,7 @@
     line-height: 1.14px;
     letter-spacing: -0.02em;
 
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
 }
 
 .flex-div {
@@ -113,4 +112,18 @@
     height: 1px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: block;
+}
+ @media screen and (min-width: 768px) {
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+ }
+    .page-links {
+        display: flex;
+    }
+    .footer-menu-item:not(:last-child) {
+        
+        margin-right: 24px;
+    
+        }
 }
