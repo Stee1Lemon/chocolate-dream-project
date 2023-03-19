@@ -14,7 +14,7 @@ iframe {
     text-transform: uppercase;
     color: #111111;
 }
-.title-accent-color {
+.how-made-accent-color {
     color: var(--accent-color);
 }
 .how-made-video {
@@ -132,6 +132,8 @@ iframe {
     }
     .how-made-title {
         margin-bottom: 50px;
+        font-size: 24px;
+        line-height: 1.17;
     }
     .video-container {
         height: 400px;
