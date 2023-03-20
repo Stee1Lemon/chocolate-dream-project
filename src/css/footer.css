@@ -5,22 +5,23 @@
     background-color: var(--secondary-bg-color);
 }
 .footer-logo {
-    display: block;
+    display: inline-flex;
     padding-right: 55px;
     max-width: 300px;
     margin-bottom: 32px;
 }
 
 .footer-logan-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
 
     color: var(--secondary-text-color);
 }
 .footer-text-accent {
 
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
+    
 
     color: var(--accent-color);
 }
@@ -52,8 +53,11 @@
     color: var(--secondary-text-color);
 
 }
+.social-links {
+    gap: 17px;
+}
 .footer-soc-item {
-
+    
     width: 22px;
     height: 22px;
 }
@@ -83,26 +87,26 @@
     color: var(--secondary-text-color);
 }
 
-.flex-div {
+ .flex-div {
     
     display: flex;
     flex-direction: column;
-    
- 
-}
+     
+  
+} 
 
 .social-links {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end; 
+     flex-direction: row;
+    justify-content: flex-end;  
 
-  
-}
-.tumb {
-    display: flex;
+   
+} 
+ .tumb {
+    display:flex;
     justify-content: space-between;
-    padding-bottom: 32px;
-}
+    padding-bottom: 32px; 
+} 
 .page-links {
     padding-top: 32px;
 }
@@ -114,16 +118,77 @@
     display: block;
 }
  @media screen and (min-width: 768px) {
-    .footer {
-        padding-top: 50px;
-        padding-bottom: 50px;
- }
-    .page-links {
-        display: flex;
-    }
+ 
+     .page-links {
+        display: inline-flex;
+}
     .footer-menu-item:not(:last-child) {
         
         margin-right: 24px;
-    
-        }
 }
+    .page-links {
+        padding-top: 24px;
+}
+    .footer-menu-item:not(:last-child) {
+        margin-bottom: 0px;
+}
+    .social-links {
+        gap: 19px;
+}
+    .footer-soc-item {
+    
+        width: 24px;
+        height: 24px;
+}
+    .social-links:is(hover,:focus) {
+        color: var(--accent-color);
+        transition: color var(--hover-animation);
+    }
+    .footer-logo {
+        display: inline-flex;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        
+} 
+    .footer-logan-text {
+        font-size: 28px;
+        /* line-height: 1.21px; */
+
+}
+    .tumb {
+      display:inline-flex;
+      margin-left: 124px;
+}
+    .flex-div {
+        margin-right: 45px;
+        margin-bottom: 50px;
+
+}
+}
+@media screen and (min-width: 1200px) {
+     .tumb {
+        margin-left: 543px;
+        
+
+}
+    .flex-div {
+        justify-content: end;
+        margin-bottom: 58px;
+        margin-right: 50px;
+      
+    
+}
+}
+
+
+
+
+   
+  
+
+
+     
+
+        
+    
+
