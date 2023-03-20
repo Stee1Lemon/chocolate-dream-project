@@ -60,7 +60,6 @@
   </div>
   <form class="modal-form">
     <label class="head-label" for="client-name">Personal information</label>
-    <!-- <p class="head-label">Personal information</p> -->
     <div class="personal-name">
       <input
         type="text"
@@ -90,13 +89,14 @@
       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
     />
 
-    <div class="mod-iput-phon">
+    <div class="mod-input-phon">
       <label class="head-label" for="client-phone">Phone number</label>
       <input
         type="tel"
         name="client-phone"
         class="modal-input"
         id="client-phone"
+        placeholder="Phone number"
         minlength="9"
       />
       <div class="blok-frame">
@@ -106,7 +106,8 @@
           width="32"
           height="24"
         />
-        <p class="modal-input">+380</p>
+
+        <p class="text-input modal-input">+380</p>
       </div>
     </div>
     <div class="mod-iput-cart">

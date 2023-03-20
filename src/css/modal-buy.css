@@ -74,6 +74,7 @@ padding: 32px 32px 32px 28px;
 
 }
 .head-label{
+    display: block;
     font-weight: 500;
         font-size: 12px;
         line-height:calc(14 / 12);
@@ -84,6 +85,7 @@ padding: 32px 32px 32px 28px;
 .modal-input {
     width: 100%;
     padding: 14px 18px;
+    margin-bottom: 18px;
     font-weight: 500;
     font-size: 14px;
     line-height:calc(17 / 14) ;
@@ -94,7 +96,37 @@ padding: 32px 32px 32px 28px;
     border-radius: 8px;
 
 }
+.personal-name>.modal-input {
+    margin-bottom: 0;
+}
 .modal-input::placeholder {
     font-weight: 400;
     color: rgba(64, 64, 64, 0.3);
 }
+.mod-input-phon {
+    position: relative;
+}
+.blok-frame {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    border-right: 1.5px solid rgba(64, 64, 64, 0.3);
+    
+}
+.mod-input-phon>.modal-input {
+padding-left: 106px;
+}
+
+.text-input {
+padding: 0 8px;
+margin: 0;
+border: none;
+
+
+    
+}
+
