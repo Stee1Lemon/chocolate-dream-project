@@ -1,14 +1,22 @@
 <!-- Кнопка в subscribe -->
-<div class="modal" data-modal="modal-explore">
+<div class="explore-modal modal" data-modal="modal-explore">
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+  <button type="button" class="modal__cross js-modal-close">
+    <svg width="12" height="12">
+      <use href="/img/symbol.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="explore-thumb"><img src="" alt="" /></div>
+  <h2 class="explore-title">Explore our new chocolate first!</h2>
+  <form class="explore-form">
+    <input
+      type="email"
+      name="user-email"
+      placeholder="Enter your email"
+      autofocus
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      title="Expected email: ***@gmail.com"
     />
-  </svg>
-  <p class="modal__title">Subscribe modal</p>
+    <button type="submit">Submit</button>
+  </form>
 </div>
