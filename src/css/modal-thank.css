@@ -5,7 +5,8 @@
     transform: translate(-50%, -50%) scale(1);
     width: 311px;
     height: 350px;
-    background-color: #FD9222;
+    text-align: start;
+    background-color: var(--accent-color);
     background-image: url(/img/modal-thank/mobile-modal-thank.png);
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -21,40 +22,39 @@
     padding: 0;
     width: 28px;
     height: 28px;
-    background: #FCF1E0;
+    background: var(--focus-color);
     border: none;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 250ms linear;
+    transition: var(--hover-animation);
 }
 
-.modal__cross{
+.modal-thank-close-icon{
     width: 16px;
     height: 16px;
-    stroke: #F16529;
-    
+    stroke: var(--close-color);    
 }
 
 .modal-thank-close-btn:hover,
 .modal-thank-close-btn:focus {
-    background-color: #FFFFFF;
+    background-color: var(--main-bg-color);
 }
 
-.modal-thank-close-btn:hover .modal__cross,
-.modal-thank-close-btn:focus .modal__cross {
-    stroke: #111111;
+.modal-thank-close-btn:hover .modal-thank-close-icon,
+.modal-thank-close-btn:focus .modal-thank-close-icon {
+    stroke: var(--text-color);
 }
 
-.modal__title {
+.modal-thank-title {
     display: block;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: #FCF1E0;
+    color: var(--focus-color);
     margin-bottom: 8px;
 }
 
@@ -62,7 +62,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--secondary-text-color);
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -88,12 +88,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         height: 40px;
     }
 
-    .modal__cross {
+    .modal-thank-close-icon {
         width: 22px;
         height: 22px;
     }
 
-    .modal__title {
+    .modal-thank-title {
         font-size: 24px;
         line-height: 1.17;
     }
