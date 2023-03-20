@@ -1,0 +1,239 @@
+.modal-buy-section{
+    position: fixed;
+    width: 300px;
+    padding: 32px 24px;
+    background-color: var(--soft-color);
+    border-radius: 15px;
+    overflow: auto;
+   
+}
+.header-modal-buy {
+  margin-bottom: 32px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height:calc(24 / 20);
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color:var(--accent-color);
+        }
+        .text-now {
+            color: var(--text-color);
+        }
+        .modal-shoko-item {
+background-color: var(--main-bg-color);
+border: 1px solid rgba(17, 17, 17, 0.1);
+border-radius: 15px;
+padding: 32px 32px 28px 32px;
+
+        }
+     
+  .modal-text-item {
+     display: inline-block;
+     margin-top: 16px;
+        background:var(--soft-color);
+        border: 1px solid rgba(17, 17, 17, 0.1);
+        border-radius: 100px;
+        padding: 8px 29px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height:calc(17 / 14);
+        color:var(--text-color);
+  }
+.modal-form {
+    text-align: left;
+}
+.reviews__pagination {
+    margin-top: 14px;
+    width: auto;
+    text-align: center;
+}
+
+.reviews__pag-active {
+    display: inline-flex;
+    width: 28px;
+    height: 13px;
+    border-radius: calc(13px / 2);
+    background-color:var(--accent-color);
+}
+
+.reviews__pag-pass {
+    display: inline-flex;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: grey;
+}
+.modal-shoko-item:not(:first-of-type){
+    display: none;
+}
+.modal-form {
+    margin-top: 32px;
+
+}
+.personal-name {
+ 
+    margin-bottom: 18px;
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+
+}
+.head-label{
+    display: block;
+    font-weight: 500;
+        font-size: 12px;
+        line-height:calc(14 / 12);
+        letter-spacing: -0.02em;
+        color:#000000;
+        margin-bottom: 8px;
+}
+.modal-input {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height:calc(17 / 14) ;
+    letter-spacing: -0.02em;
+    color: #000000;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 8px;
+
+}
+.personal-name>.modal-input {
+    margin-bottom: 0;
+}
+.modal-input::placeholder {
+    font-weight: 400;
+    color: rgba(64, 64, 64, 0.3);
+}
+.mod-input-phon {
+    position: relative;
+}
+.blok-frame {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    border-right: 1.5px solid rgba(64, 64, 64, 0.3);
+    
+}
+.mod-input-phon>.modal-input {
+padding-left: 106px;
+}
+
+.text-input {
+padding: 0 8px 0 0;
+margin: 0;
+border: none;   
+}
+.blok-frame img{
+    box-shadow: 0  2px   rgba(64, 64, 64, 0.3);;
+}
+.mod-input-cart {
+    position: relative;
+}
+.blok-cart {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+  }
+  .mod-input-cart>.modal-input {
+    padding-right: 52px;
+  }
+  .modal-message {
+ height: 91px;
+ overflow: auto;
+ resize: none;
+  }
+  .mod-btn{
+    padding: 12px 28px;
+    background-color:var(--accent-color);
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height:calc(17 / 14);
+    color:var(--secondary-text-color);
+    transition: var(--hover-animation) ;
+  }
+  .mod-btn:is(:hover, :focus){
+    background-color: var(--focus-color);
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 375px) {
+    .modal-buy-section {
+            
+            width: 311px;
+  }}
+@media screen and (min-width: 768px) {
+.modal-buy-section {
+        min-width: 610px;
+        padding: 48px;
+    }
+        .header-modal-buy {
+            font-size: 24px;
+            line-height: calc(28 / 24);   
+        }
+               
+    
+        .reviews__pagination {
+            display: none;
+        }
+       .modal-shoko-list {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      gap: 16px;
+        
+      }
+      .modal-shoko-item {
+        padding: 24px 20px 18px 20px;
+        width: calc((100% - 32px) / 3);
+       }
+     .modal-shoko-item:not(:first-of-type) {
+       display: block;
+      }
+          .modal-form {
+              margin-top: 40px;
+      }
+   .personal-name {
+       flex-direction: row;
+       gap: 21px;
+       justify-content: space-between;
+   }
+.head-label {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+   }
+   .blok-frame {
+    left: 18px;
+          gap: 18px;
+        border-right: 2.73px solid rgba(64, 64, 64, 0.3);
+        padding-top: 5px;
+        }
+ .modal-input {
+     padding: 21px 24px;
+     margin-bottom: 18px;
+     font-size: 18px;
+     line-height: calc(22 / 18);
+   
+ }
+ .mod-input-phon>.modal-input {
+     padding-left: 177px;
+ }
+.text-input {
+    margin: 0;
+    padding: 0 32px 0 0;
+    }
+          .modal-message {
+              height: 137px;
+          }
+}
