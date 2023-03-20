@@ -6,14 +6,32 @@
       <use href="/img/symbol.svg#icon-close"></use>
     </svg>
   </button>
-  <div class="explore-thumb"><img src="" alt="" /></div>
+  <div class="explore-thumb">
+    <picture>
+      <source
+        srcset="
+          /img/modal-explore/mob-sub-choc-1x.jpg 1x,
+          /img/modal-explore/mob-sub-choc-2x.jpg 2x
+        "
+        media="(max-width: 765px)"
+      />
+      <source
+        srcset="
+          /img/modal-explore/tab-sub-choc-1x.jpg 1x,
+          /img/modal-explore/tab-sub-choc-2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img src="/img/modal-explore/mob-sub-choc-1x.jpg" alt="Chocolate bars" />
+    </picture>
+  </div>
   <div class="explore-info">
     <h2 class="explore-title">
       Explore our<br /><span>new chocolate</span> first!
     </h2>
     <form class="explore-form">
       <input
-      class="explore-input"
+        class="explore-input"
         type="email"
         name="user-email"
         placeholder="Enter your email"

@@ -7,9 +7,10 @@
 }
 
 .explore-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 14px;
   display: flex;
-  margin-top: 15px;
-  margin-right: 14px;
   margin-left: auto;
   justify-content: center;
   align-items: center;
