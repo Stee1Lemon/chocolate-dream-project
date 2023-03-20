@@ -167,7 +167,7 @@ border: none;
     .modal {
             
             width: 311px;
-  }
+  }}
 @media screen and (min-width: 768px) {
 .modal {
         width: 609px;
