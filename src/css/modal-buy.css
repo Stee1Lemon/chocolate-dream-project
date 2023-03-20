@@ -1,8 +1,10 @@
 .modal{
-    width: 311px;
+    position: fixed;
+    width: 300px;
     padding: 32px 24px;
     background-color: var(--soft-color);
     border-radius: 15px;
+    overflow: auto;
    
 }
 .header-modal-buy {
@@ -48,7 +50,7 @@ padding: 32px 32px 32px 28px;
     width: 28px;
     height: 13px;
     border-radius: calc(13px / 2);
-    background-color: #FD9222;
+    background-color:var(--accent-color);
 }
 
 .reviews__pag-pass {
@@ -124,9 +126,58 @@ padding-left: 106px;
 .text-input {
 padding: 0 8px;
 margin: 0;
-border: none;
-
-
-    
+border: none;   
 }
-
+.blok-frame img{
+    box-shadow: 0  2px   rgba(64, 64, 64, 0.3);;
+}
+.mod-iput-cart {
+    position: relative;
+}
+.blok-cart {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+  }
+  .mod-iput-cart>.modal-input {
+    padding-right: 46px;
+  }
+  .modal-message {
+ height: 91px;
+ overflow: auto;
+ resize: none;
+  }
+  .mod-btn{
+    padding: 12px 28px;
+    background-color:var(--accent-color);
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height:calc(17 / 14);
+    color:var(--secondary-text-color);
+    transition: var(--hover-animation) ;
+  }
+  .mod-btn:is(:hover, :focus){
+    background-color: var(--focus-color);
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 375px) {
+    .modal {
+            
+            width: 311px;
+  }
+@media screen and (min-width: 768px) {
+.modal {
+        width: 609px;
+        padding: 48px;
+    }
+        .header-modal-buy {
+            font-size: 24px;
+            line-height: calc(28 / 24);   
+        }
+                 .modal-shoko-item {
+                 padding: 24px 20px 20px 18px;
+                 }
+}

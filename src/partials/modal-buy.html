@@ -112,13 +112,14 @@
     </div>
     <div class="mod-iput-cart">
       <label class="head-label" for="client-cart">Cart number</label>
+
       <input
-        type="number"
+        type="text"
         name="client-cart"
         class="modal-input"
         id="client-cart"
-        pattern="\d{4}-\d{4}-\d{4}-\d{4}"
         placeholder="Enter card"
+        pattern="[0-9]{16}"
       />
       <div class="blok-cart">
         <img
@@ -133,14 +134,14 @@
     <label class="head-label" for="client-message">Comment</label>
     <textarea
       name="client-message"
-      class="modal-message"
+      class="modal-message modal-input"
       id="client-message"
       placeholder="Enter text"
     ></textarea>
 
     <button
       type="submit"
-      class="js-open-modal js-modal-close"
+      class="mod-btn js-open-modal js-modal-close"
       data-modal="modal-thank"
     >
       submit
