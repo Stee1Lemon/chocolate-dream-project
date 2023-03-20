@@ -130,6 +130,9 @@ iframe {
     .how-made > .container {
         width: 679px;
     }
+    .how-made-caption{
+        width: 344px;
+    }
     .how-made-title {
         margin-bottom: 50px;
         font-size: 24px;
@@ -171,7 +174,6 @@ iframe {
     }
     .how-made-caption{
         margin-bottom: 28px;
-        width: 344px;
     }
     .how-made-list-title{
         margin-bottom: 24px;
