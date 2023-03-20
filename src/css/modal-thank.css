@@ -74,7 +74,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) {
-    .modal {
+    .modal-thank {
         width: 516px;
         height: 414px;
         background-image: url(/img/modal-thank/tablet-modal-thank.png);
