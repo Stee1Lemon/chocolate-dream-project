@@ -1,0 +1,24 @@
+.explore-modal {
+  max-width: 311px;
+  padding: 0;
+  background-color: blueviolet;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.explore-close-btn {
+}
+
+.explore-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .explore-modal {
+    padding: 0;
+  }
+}
