@@ -23,9 +23,13 @@
 background-color: var(--main-bg-color);
 border: 1px solid rgba(17, 17, 17, 0.1);
 border-radius: 15px;
-padding: 32px 32px 32px 28px;
+padding: 32px 32px 28px 32px;
+
         }
+     
   .modal-text-item {
+     display: inline-block;
+     margin-top: 16px;
         background:var(--soft-color);
         border: 1px solid rgba(17, 17, 17, 0.1);
         border-radius: 100px;
@@ -41,7 +45,6 @@ padding: 32px 32px 32px 28px;
 .reviews__pagination {
     margin-top: 14px;
     width: auto;
- 
     text-align: center;
 }
 
@@ -112,6 +115,7 @@ padding: 32px 32px 32px 28px;
     display: flex;
     justify-content: start;
     align-items: center;
+    gap: 8px;
     position: absolute;
     top: 50%;
     left: 18px;
@@ -124,14 +128,14 @@ padding-left: 106px;
 }
 
 .text-input {
-padding: 0 8px;
+padding: 0 8px 0 0;
 margin: 0;
 border: none;   
 }
 .blok-frame img{
     box-shadow: 0  2px   rgba(64, 64, 64, 0.3);;
 }
-.mod-iput-cart {
+.mod-input-cart {
     position: relative;
 }
 .blok-cart {
@@ -140,8 +144,8 @@ border: none;
     right: 14px;
     transform: translateY(-50%);
   }
-  .mod-iput-cart>.modal-input {
-    padding-right: 46px;
+  .mod-input-cart>.modal-input {
+    padding-right: 52px;
   }
   .modal-message {
  height: 91px;
@@ -170,14 +174,66 @@ border: none;
   }}
 @media screen and (min-width: 768px) {
 .modal {
-        width: 609px;
+        min-width: 610px;
         padding: 48px;
     }
         .header-modal-buy {
             font-size: 24px;
             line-height: calc(28 / 24);   
         }
-                 .modal-shoko-item {
-                 padding: 24px 20px 20px 18px;
-                 }
+               
+    
+        .reviews__pagination {
+            display: none;
+        }
+       .modal-shoko-list {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      gap: 16px;
+        
+      }
+      .modal-shoko-item {
+        padding: 24px 20px 18px 20px;
+        width: calc((100% - 32px) / 3);
+       }
+     .modal-shoko-item:not(:first-of-type) {
+       display: block;
+      }
+          .modal-form {
+              margin-top: 40px;
+      }
+   .personal-name {
+       flex-direction: row;
+       gap: 21px;
+       justify-content: space-between;
+   }
+.head-label {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+   }
+   .blok-frame {
+    left: 18px;
+          gap: 18px;
+        border-right: 2.73px solid rgba(64, 64, 64, 0.3);
+        padding-top: 5px;
+        }
+ .modal-input {
+     padding: 21px 24px;
+     margin-bottom: 18px;
+     font-size: 18px;
+     line-height: calc(22 / 18);
+   
+ }
+ .mod-input-phon>.modal-input {
+     padding-left: 177px;
+ }
+.text-input {
+    margin: 0;
+    padding: 0 32px 0 0;
+    }
+          .modal-message {
+              height: 137px;
+          }
 }
