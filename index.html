@@ -28,7 +28,7 @@
     
     
     <script type="module" crossorigin src="/chocolate-dream-project/assets/index-715083b4.js"></script>
-    <link rel="stylesheet" href="/chocolate-dream-project/assets/index-0f7be4de.css">
+    <link rel="stylesheet" href="/chocolate-dream-project/assets/index-b87a7669.css">
   </head>
   <body>
     <!-- Olena Rudnieva -->
@@ -695,7 +695,9 @@
 </footer>
 
     <!-- Кнопка в hero та sellers -->
-<div class="modal" data-modal="modal-buy">
+<div class="modal modal-buy-section" data-modal="modal-buy">
+  <!-- Опанасюк Олександр -->
+  <h2 class="header-modal-buy">buy<span class="text-now"> now</span></h2>
   <!--   Svg иконка для закрытия окна  -->
   <svg
     class="modal__cross js-modal-close"
@@ -706,8 +708,133 @@
       d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
     />
   </svg>
-  <p class="modal__title">Buy now modal-buy</p>
-  <button type="submit" class="js-open-modal" data-modal="modal-thank">go to thank modal</button>
+  <ul class="modal-shoko-list list">
+    <li class="modal-shoko-item">
+      <img
+        srcset="/chocolate-dream-project/assets/kissin-1-1x-abccff14.png 1x, /chocolate-dream-project/assets/kissin-1-2x-ecebc7c3.png 2x"
+        src="/chocolate-dream-project/assets/kissin-1-1x-abccff14.png"
+        alt="black shokolad"
+        width="167"
+        height="148"
+      />
+
+      <span class="modal-text-item">100 g</span>
+    </li>
+    <li class="modal-shoko-item">
+      <img
+        srcset="/chocolate-dream-project/assets/kissin-2-1x-d5f9a457.png 1x, /chocolate-dream-project/assets/kissin-2-2x-32cbd183.png 2x"
+        src="/chocolate-dream-project/assets/kissin-2-1x-d5f9a457.png"
+        alt="black shokolad"
+        width="167"
+        height="148"
+      />
+      <p class="modal-text-item">200 g</p>
+    </li>
+    <li class="modal-shoko-item">
+      <img
+        srcset="/chocolate-dream-project/assets/kissin-3-1x-3716d2c9.png 1x, /chocolate-dream-project/assets/kissin-3-2x-bcabb788.png 2x"
+        src="/chocolate-dream-project/assets/kissin-3-1x-3716d2c9.png"
+        alt="black shokolad"
+        width="167"
+        height="148"
+      />
+      <p class="modal-text-item">300 g</p>
+    </li>
+  </ul>
+  <div class="reviews__pagination">
+    <span class="reviews__pag-active"></span>
+    <span class="reviews__pag-pass"></span>
+    <span class="reviews__pag-pass"></span>
+  </div>
+  <form class="modal-form">
+    <label class="head-label" for="client-name">Personal information</label>
+    <div class="personal-name">
+      <input
+        type="text"
+        name="client-name"
+        class="modal-input"
+        id="client-name"
+        placeholder="Name"
+        pattern=".{3,}"
+      />
+
+      <input
+        type="text"
+        name="client-name"
+        class="modal-input"
+        id="client-surname"
+        placeholder="Surname"
+        pattern=".{3,}"
+      />
+    </div>
+    <label class="head-label" for="client-email">Email</label>
+    <input
+      type="email"
+      name="client-email"
+      class="modal-input"
+      id="client-email"
+      placeholder="Enter your email"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+    />
+
+    <div class="mod-input-phon">
+      <label class="head-label" for="client-phone">Phone number</label>
+      <input
+        type="tel"
+        name="client-phone"
+        class="modal-input"
+        id="client-phone"
+        placeholder="Phone number"
+        minlength="9"
+      />
+      <div class="blok-frame">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAZCAYAAABQDyyRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABWSURBVHgB7dahGYAwDEThF74YtmCUbsGcKCRDILAdAVvVZosz90zs7y4gLjjvp25DU98QZ4ABBhggB2Q73joTRXsOYn54CwwwwAADpGXNwFXPeUdR8C/jBA2PLqUt/wAAAABJRU5ErkJggg=="
+          alt="Ukranian flag"
+          width="32"
+          height="24"
+        />
+
+        <p class="text-input modal-input">+380</p>
+      </div>
+    </div>
+    <div class="mod-input-cart">
+      <label class="head-label" for="client-cart">Cart number</label>
+
+      <input
+        type="text"
+        name="client-cart"
+        class="modal-input"
+        id="client-cart"
+        placeholder="Enter card"
+        pattern="[0-9]{16}"
+      />
+      <div class="blok-cart">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAOCAYAAAArMezNAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF1SURBVHgBtVRLTgJBEH3djMhPAxETl0Piyg2uXLgaV269gXIC4ATq0pVwAuQGegHlCHACZ2liIsTEKDLTZXWLqAFq3PiSnnRXvX7zpqa7gH+C+rl4hBekoE4J2OVUcUroG1C7jMkVdVCMNOpECJgTTLeNePQMoZ2toTcnPMTKpYFqLHOg1yjMXUyAHHzBZSt9guZMOFE0T1g/jKDKhMkeBzwgSVzZz9fQdxCQ34+wum3c3GwB0Q5EcFkOdAq6LpFUGjNR5/6BHxFEsOuGJlAgkbySmYvpIWRhhar++vvLoAsLggmOGT4LI5QY0dOCYAZJ6NtS3EgM86JB799rYlFTggh79tUQGd/A3EvEbDV2wyKufA7RDKGiS3gL+R1Nifg6SHFJFKjwJ9FzvoGhrTE2MG5NxcNlG55vve64iq6gOeKr3mTRM7v41StsWWLEAU+POVEk1wf0gBBfbyLqOfcdBJw70nykOO/D9hLCgEvfUjXXNxw+AGROeseGBmeYAAAAAElFTkSuQmCC"
+          alt="icon Mastercard"
+          width="30"
+          height="18"
+        />
+      </div>
+    </div>
+
+    <label class="head-label" for="client-message">Comment</label>
+    <textarea
+      name="client-message"
+      class="modal-message modal-input"
+      id="client-message"
+      placeholder="Enter text"
+    ></textarea>
+
+    <button
+      type="submit"
+      class="mod-btn js-open-modal js-modal-close"
+      data-modal="modal-thank"
+    >
+      submit
+    </button>
+  </form>
 </div>
 
     <!-- Кнопка в subscribe -->
