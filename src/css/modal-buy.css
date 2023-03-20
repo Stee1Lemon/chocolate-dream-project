@@ -1,4 +1,4 @@
-.modal{
+.modal-buy-section{
     position: fixed;
     width: 300px;
     padding: 32px 24px;
@@ -168,12 +168,12 @@ border: none;
     color: var(--accent-color);
   }
   @media screen and (min-width: 375px) {
-    .modal {
+    .modal-buy-section {
             
             width: 311px;
   }}
 @media screen and (min-width: 768px) {
-.modal {
+.modal-buy-section {
         min-width: 610px;
         padding: 48px;
     }
