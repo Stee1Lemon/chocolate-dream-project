@@ -34,7 +34,7 @@
 .modal-thank-close-icon{
     width: 16px;
     height: 16px;
-    stroke: #F16529;    
+    stroke: var(--close-color);    
 }
 
 .modal-thank-close-btn:hover,
