@@ -30,7 +30,7 @@
     transition: background-color 250ms linear;
 }
 
-.modal__cross {
+.modal-thank-close-icon {
     width: 16px;
     height: 16px;
     stroke: #F16529;
@@ -41,8 +41,8 @@
     background-color: #FFFFFF;
 }
 
-.modal-thank-close-btn:hover .modal__cross,
-.modal-thank-close-btn:focus .modal__cross {
+.modal-thank-close-btn:hover .modal-thank-close-icon,
+.modal-thank-close-btn:focus .modal-thank-close-icon {
     stroke: #111111;
 }
 

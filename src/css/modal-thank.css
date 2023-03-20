@@ -30,7 +30,7 @@
     transition: background-color 250ms linear;
 }
 
-.modal__cross{
+.modal-thank-close-icon{
     width: 16px;
     height: 16px;
     stroke: #F16529;
@@ -42,12 +42,12 @@
     background-color: #FFFFFF;
 }
 
-.modal-thank-close-btn:hover .modal__cross,
-.modal-thank-close-btn:focus .modal__cross {
+.modal-thank-close-btn:hover .modal-thank-close-icon,
+.modal-thank-close-btn:focus .modal-thank-close-icon {
     stroke: #111111;
 }
 
-.modal__title {
+.modal-thank-title {
     display: block;
     font-weight: 600;
     font-size: 20px;
@@ -88,12 +88,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         height: 40px;
     }
 
-    .modal__cross {
+    .modal-thank-close-icon {
         width: 22px;
         height: 22px;
     }
 
-    .modal__title {
+    .modal-thank-title {
         font-size: 24px;
         line-height: 1.17;
     }
