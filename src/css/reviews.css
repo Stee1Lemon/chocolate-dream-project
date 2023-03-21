@@ -1,7 +1,7 @@
 .reviews {
     padding-top: 72px;
     padding-bottom: 72px;
-    background: #E2E2E2;
+    background: var(--third-bg-color);
 }
 
 .reviews-container {
@@ -15,12 +15,12 @@
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--text-color);
     margin-bottom: 32px;
 }
 
 .reviews-title-accent {
-    color: #FD9222;
+    color: var(--accent-color);
     margin-right: 3px;
 }
 
@@ -30,9 +30,9 @@
 
 .reviews-wrap {
     position: relative;
-    width: 335px;
-    height: 200px;
-    background: #FFFFFF;
+    width: 280px;
+    height: 180px;
+    background: var(--main-bg-color);
     border: 1px solid rgba(17, 17, 17, 0.1);
     box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
     border-radius: 15px;
@@ -54,8 +54,8 @@
     font-size: 18px;
     line-height: 1.33;
     text-align: center;
-    color: #111111;
-    margin-bottom: 24px;
+    color: var(--text-color);
+    margin-bottom: 14px;
 }
 
 .review-text {
@@ -72,9 +72,9 @@
     font-size: 14px;
     line-height: 1.21;
     align-items: center;
-    border: 1px solid #FD9222;
+    border: 1px solid var(--accent-color);
     background-color: transparent;
-    color: #111111;
+    color: var(--text-color);
     border-radius: 100px;
     padding: 12px 28px;
     margin-top: 30px;
@@ -83,8 +83,8 @@
 
 .review-btn:hover,
 .review-btn:focus {
-    background-color: #FD9222;
-    color: #FFFFFF;
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
 }
 
 
@@ -120,7 +120,7 @@
 }
 
 .slick-dots li.slick-active button {
-    background-color: #FD9222;
+    background-color: var(--accent-color);
     width: 28px;
     height: 13px;
     border-radius: 10px;
@@ -131,6 +131,19 @@
     margin: 0 7px;
     width: auto;
     height: auto;
+}
+
+@media screen and (min-width: 375px) {
+    .reviews-wrap {
+        width: 335px;
+        height: 200px;
+    }
+
+    .reviewer-name {
+        margin-bottom: 24px;
+    }
+
+    
 }
 
 @media screen and (min-width: 768px) {
