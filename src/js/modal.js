@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
             Нужно подстраховаться. */
       e.preventDefault();
-
+      document.body.classList.toggle('no-scroll');
       /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
       var modalId = this.getAttribute('data-modal'),
