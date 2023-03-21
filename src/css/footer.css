@@ -3,30 +3,49 @@
     padding-bottom: 32px;
     
     background-color: var(--secondary-bg-color);
-}
-.footer-logo {
-    display: inline-flex;
-    padding-right: 55px;
-    max-width: 300px;
-    margin-bottom: 32px;
-}
+ } 
 
+ 
 .footer-logan-text {
+   
+    max-width: 300px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: -0.02em;
+    margin-bottom: 32px;
 
     color: var(--secondary-text-color);
 }
 .footer-text-accent {
     color: var(--accent-color);
 }
+
+.footer-thumb {
+    display: flex;
+    flex-direction: column;
+    
+}
+    
+.flex-div {
+    position: relative;
+    margin-bottom: 32px;
+}
+  
+.social-links {
+    display: flex;
+    position: absolute;
+    align-self: self-end;
+    /* transform: translateY(-33%); */
+    margin-top: 83px;
+    gap: 17px;
+}
+    
 .footer-address-text {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.29px;
+    line-height: 1.29;
     margin-bottom: 14px;
 
     color: var(--secondary-text-color);
@@ -36,7 +55,7 @@
     display: inline-block;
     font-style: normal;
     font-size: 14px;
-    line-height: 1.29px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     color: var(--secondary-text-color);
 }
@@ -44,22 +63,13 @@
 .address-mail-link {
     font-style: normal;
     font-size: 14px;
-    line-height: 1.29px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
    
     color: var(--secondary-text-color);
 
 }
-.social-links {
-    gap: 17px;
-}
-.footer-soc-item {
-
-}
-
 .footer-soc-link {
-    
-   
     color: var(--secondary-text-color);
 
 }
@@ -67,11 +77,10 @@
 .footer-soc-icon {
     width: 22px;
     height: 22px;
-    
     stroke: currentColor;
 }
 
- .icon-twitter {
+.icon-twitter {
      border: 1.5px solid #FFFFFF;
 }
 .footer-menu-item:not(:last-child) {
@@ -83,32 +92,13 @@
     
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: -0.02em;
 
     color: var(--secondary-text-color);
 }
 
- .flex-div {
-    
-    display: flex;
-    flex-direction: column;
-     
-  
-} 
-
-.social-links {
-    display: flex;
-     flex-direction: row;
-    justify-content: flex-end;  
-
-   
-} 
- .tumb {
-    display:flex;
-    justify-content: space-between;
-    padding-bottom: 32px; 
-} 
+ 
 .page-links {
     padding-top: 32px;
 }
@@ -120,69 +110,76 @@
     display: block;
 }
  @media screen and (min-width: 768px) {
- 
-     .page-links {
-        display: inline-flex;
-}
-    .footer-menu-item:not(:last-child) {
+.footer-thumb {
         
-        margin-right: 24px;
-}
-    .page-links {
-        padding-top: 24px;
-}
-    .footer-menu-item:not(:last-child) {
-        margin-bottom: 0px;
-}
-    .social-links {
-        gap: 19px;
-}
-    .icon-twitter {
-    border: 2px solid #FFFFFF;
-}
-    .footer-soc-icon {
-        width: 24px;
-        height: 24px;
-}
-        
-
-    .footer-logo {
-        display: inline-flex;
-        padding-right: 0px;
-        margin-bottom: 0px;
-        
-} 
-    .footer-logan-text {
-        font-size: 28px;
-        /* line-height: 1.21px; */
-
-}
-    .tumb {
-      display:inline-flex;
-      margin-left: 124px;
-}
-    .flex-div {
-        margin-right: 45px;
-        margin-bottom: 50px;
-
-}
-}
-@media screen and (min-width: 1200px) {
-     .tumb {
-        margin-left: 543px;
-        
-
-}
-    .flex-div {
-        
-        margin-bottom: 58px;
-        margin-right: 58px;
-      
+    flex-direction: row;
     
+        }
+               
+ .social-links {
+     display: flex;
+     position: static;
+     margin-top: 0px;
+     gap: 17px;
+     align-self: flex-start;
+ }
+ 
+ .page-links {
+     display: flex;
+ }
+
+ .footer-menu-item:not(:last-child) {
+
+     margin-right: 24px;
+ }
+
+ .page-links {
+     padding-top: 24px;
+ }
+
+ .footer-menu-item:not(:last-child) {
+     margin-bottom: 0px;
+ }
+
+ .social-links {
+    
+    margin-left: 52px;
+     gap: 19px;
+ }
+
+ .icon-twitter {
+     border: 2px solid #FFFFFF;
+ }
+
+ .footer-soc-icon {
+     width: 24px;
+     height: 24px;
+ }
+
+ .footer-logan-text {
+     font-size: 28px;
+     line-height: 1.21;
+     margin-right: 124px;
+ }
+   
+   
+    
+
+ }
+ 
+@media screen and (min-width: 1200px) {
+    .footer-logan-text {
+        margin-right: 543px;
 }
+.social-links {
+
+   margin-left: 65px;
+    gap: 21px;
 }
 
-
+}
+ 
+ 
 
 
    
@@ -193,4 +190,3 @@
 
         
     
-
