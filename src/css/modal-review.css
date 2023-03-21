@@ -1,7 +1,4 @@
 .modal-review {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 311px;
     height: 471px;
     background-color: var(--soft-color);
