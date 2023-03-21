@@ -36,8 +36,8 @@
     display: flex;
     position: absolute;
     align-self: self-end;
-    /* transform: translateY(-33%); */
-    margin-top: 83px;
+    
+    margin-top: 87px;
     gap: 17px;
 }
     
