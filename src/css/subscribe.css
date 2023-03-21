@@ -82,6 +82,7 @@
     background: rgb(74, 66, 66) url(/img/subscribe/tablet-subscribe-1x.jpg)
       no-repeat center;
     max-width: 768px;
+    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -91,6 +92,7 @@
       background: rgb(74, 66, 66) url(/img/subscribe/tablet-subscribe-2x.jpg)
         no-repeat center;
       max-width: 768px;
+      background-size: cover;
     }
   }
 
@@ -119,6 +121,7 @@
     background: rgb(74, 66, 66) url(/img/subscribe/desc-subscribe-1x.jpg)
       no-repeat center;
     max-width: 1200px;
+    background-size: cover;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -127,6 +130,7 @@
       background: rgb(74, 66, 66) url(/img/subscribe/desc-subscribe-2x.jpg)
         no-repeat center;
       max-width: 1200px;
+      background-size: cover;
     }
   }
 }

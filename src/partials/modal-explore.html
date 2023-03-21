@@ -1,0 +1,45 @@
+<!-- Кнопка в subscribe -->
+<div class="explore-modal modal" data-modal="modal-explore">
+  <!--   Svg иконка для закрытия окна  -->
+  <button type="button" class="explore-close-btn js-modal-close">
+    <svg class="explore-close-icon" width="24" height="24">
+      <use href="/img/symbol.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="explore-thumb">
+    <picture>
+      <source
+        srcset="
+          /img/modal-explore/mob-sub-choc-1x.jpg 1x,
+          /img/modal-explore/mob-sub-choc-2x.jpg 2x
+        "
+        media="(max-width: 765px)"
+      />
+      <source
+        srcset="
+          /img/modal-explore/tab-sub-choc-1x.jpg 1x,
+          /img/modal-explore/tab-sub-choc-2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img src="/img/modal-explore/mob-sub-choc-1x.jpg" alt="Chocolate bars" />
+    </picture>
+  </div>
+  <div class="explore-info">
+    <h2 class="explore-title">
+      Explore our<br /><span>new chocolate</span> first!
+    </h2>
+    <form class="explore-form">
+      <input
+        class="explore-input"
+        type="email"
+        name="user-email"
+        placeholder="Enter your email"
+        autofocus
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        title="Expected email: ***@gmail.com"
+      />
+      <button class="explore-submit-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

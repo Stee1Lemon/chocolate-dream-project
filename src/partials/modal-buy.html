@@ -1,0 +1,151 @@
+<!-- Кнопка в hero та sellers -->
+<div class="modal modal-buy-section" data-modal="modal-buy">
+  <!-- Опанасюк Олександр -->
+  <h2 class="header-modal-buy">buy<span class="text-now"> now</span></h2>
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <ul class="modal-shoko-list list">
+    <li class="modal-shoko-item">
+      <img
+        srcset="
+          ./img/modal-explore/kissin-1-1x.png 1x,
+          ./img/modal-explore/kissin-1-2x.png 2x
+        "
+        src="./img/modal-explore/kissin-1-1x.png"
+        alt="black shokolad"
+        width="167"
+        height="148"
+      />
+
+      <span class="modal-text-item">100 g</span>
+    </li>
+    <li class="modal-shoko-item">
+      <img
+        srcset="
+          ./img/modal-explore/kissin-2-1x.png 1x,
+          ./img/modal-explore/kissin-2-2x.png 2x
+        "
+        src="./img/modal-explore/kissin-2-1x.png"
+        alt="black shokolad"
+        width="167"
+        height="148"
+      />
+      <p class="modal-text-item">200 g</p>
+    </li>
+    <li class="modal-shoko-item">
+      <img
+        srcset="
+          ./img/modal-explore/kissin-3-1x.png 1x,
+          ./img/modal-explore/kissin-3-2x.png 2x
+        "
+        src="./img/modal-explore/kissin-3-1x.png"
+        alt="black shokolad"
+        width="167"
+        height="148"
+      />
+      <p class="modal-text-item">300 g</p>
+    </li>
+  </ul>
+  <div class="reviews__pagination">
+    <span class="reviews__pag-active"></span>
+    <span class="reviews__pag-pass"></span>
+    <span class="reviews__pag-pass"></span>
+  </div>
+  <form class="modal-form">
+    <label class="head-label" for="client-name">Personal information</label>
+    <div class="personal-name">
+      <input
+        type="text"
+        name="client-name"
+        class="modal-input"
+        id="client-name"
+        placeholder="Name"
+        pattern=".{3,}"
+      />
+
+      <input
+        type="text"
+        name="client-name"
+        class="modal-input"
+        id="client-surname"
+        placeholder="Surname"
+        pattern=".{3,}"
+      />
+    </div>
+    <label class="head-label" for="client-email">Email</label>
+    <input
+      type="email"
+      name="client-email"
+      class="modal-input"
+      id="client-email"
+      placeholder="Enter your email"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+    />
+
+    <div class="mod-input-phon">
+      <label class="head-label" for="client-phone">Phone number</label>
+      <input
+        type="tel"
+        name="client-phone"
+        class="modal-input"
+        id="client-phone"
+        placeholder="Phone number"
+        minlength="9"
+      />
+      <div class="blok-frame">
+        <img
+          src="./img/modal-explore/Frame-ukr.png"
+          alt="Ukranian flag"
+          width="32"
+          height="24"
+        />
+
+        <p class="text-input modal-input">+380</p>
+      </div>
+    </div>
+    <div class="mod-input-cart">
+      <label class="head-label" for="client-cart">Cart number</label>
+
+      <input
+        type="text"
+        name="client-cart"
+        class="modal-input"
+        id="client-cart"
+        placeholder="Enter card"
+        pattern="[0-9]{16}"
+      />
+      <div class="blok-cart">
+        <img
+          src="./img/modal-explore/Mastercard.png"
+          alt="icon Mastercard"
+          width="30"
+          height="18"
+        />
+      </div>
+    </div>
+
+    <label class="head-label" for="client-message">Comment</label>
+    <textarea
+      name="client-message"
+      class="modal-message modal-input"
+      id="client-message"
+      placeholder="Enter text"
+    ></textarea>
+
+    <button
+      type="submit"
+      class="mod-btn js-open-modal js-modal-close"
+      data-modal="modal-thank"
+    >
+      submit
+    </button>
+  </form>
+</div>

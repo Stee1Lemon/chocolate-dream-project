@@ -1,12 +1,28 @@
-<section class="how-made">
+<section class="how-made" id="how-made">
     <div class="container">
-        <h2 class="how-made-title" id="how-made">HOW IT&rsquo;S <span class="title-accent-color">MADE&quest;</span></h2>
+        <h2 class="how-made-title" id="how-made">HOW IT&rsquo;S <span class="how-made-accent-color">MADE&quest;</span>
+        </h2>
         <div class="how-made-flex">
             <div class="how-made-video">
-                <div class="how-made-svg">
-                    <svg class="how-made-play" width="14" height="15">
-                        <use href="../img/symbol.svg#icon-play-video"></use>
-                    </svg>
+                <picture>
+                    <source srcset="/img/how-made/des-video.jpg 1x, /img/how-made/des-video2x.jpg  2x"
+                        media="(min-width: 1200px)" />
+                    <source srcset="/img/how-made/tab-video.jpg 1x, /img/how-made/tab-video2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                    <source srcset="/img/how-made/mob-video.jpg 1x, /img/how-made/mob-video2x.jpg 2x"
+                        media="(max-width: 767px)" />
+                    <img src="/img/how-made/des-video.jpg" alt="how made chocolate" width="614">
+                </picture>
+                <div class="video-container">
+                    <button class="how-made-svg" type="button">
+                        <svg class="how-made-play" width="14" height="15">
+                            <use href="../img/symbol.svg#icon-play-video"></use>
+                        </svg>
+                    </button>
+                    <iframe src="https://www.youtube.com/embed/LSREfhKcD48"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
             <div class="how-made-card">

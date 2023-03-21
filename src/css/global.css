@@ -3,9 +3,11 @@
   --main-bg-color: #ffffff;
   --secondary-bg-color: #1e1823;
   --secondary-text-color: #ffffff;
-  --soft-color: #FAFAFA;
+  --soft-color: #fafafa;
+  --text-color: #111111;
   --accent-color: #fd9222;
   --focus-color: #fcf1e0;
+  --close-color: #f16529;
   --text-animation: cubic-bezier(0.23, 0.86, 0.79, 0.77);
   --hover-animation: color 300ms cubic-bezier(0.97, -0.05, 0.9, 0.83),
     background-color 300ms cubic-bezier(0.97, -0.05, 0.9, 0.83);
@@ -13,12 +15,9 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: var(--soft-color);
 }
-.title{
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.1;
-}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -31,22 +30,18 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-/* -----------Тимчасова шапка---------- */
-.global-info {
-  padding: 30px;
-  margin: 30px;
-  font-size: 25;
-  color: white;
-  background-color: rgb(0, 0, 0);
-}
-.read-team {
-  color: #fd9222;
-}
 
-/* ---------------------------------------- */
 .container {
   margin: 0 auto;
   outline: 2px solid #0801d2;
+}
+
+.rad-img {
+  border-radius: 15px;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 @media screen and (min-width: 375px) {
@@ -68,3 +63,68 @@ body {
     max-width: 1200px;
   }
 }
+
+/* -----------Modal Styles-------------- */
+
+/* Стили для подложки */
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 500px;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+  border-radius: 3px;
+  background-color: #ec2e2e;
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}
+/* ----------------------------------- */
