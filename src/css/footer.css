@@ -71,6 +71,7 @@
 }
 .footer-soc-link {
     color: var(--secondary-text-color);
+    transition: var( --hover-animation);
 
 }
 
@@ -81,7 +82,7 @@
 }
 
 .icon-twitter {
-     border: 1.5px solid #FFFFFF;
+     border: 1.5px solid var(--secondary-text-color);
 }
 .footer-menu-item:not(:last-child) {
     margin-bottom: 18px;
@@ -128,6 +129,11 @@
      display: flex;
  }
 
+ 
+.footer-soc-link:is(:hover, :focus) {
+    color:var(--accent-color);
+
+}
  .footer-menu-item:not(:last-child) {
 
      margin-right: 24px;
@@ -148,7 +154,7 @@
  }
 
  .icon-twitter {
-     border: 2px solid #FFFFFF;
+     border: 2px solid var(--secondary-text-color);
  }
 
  .footer-soc-icon {
