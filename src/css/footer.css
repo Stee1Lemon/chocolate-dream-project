@@ -1,3 +1,4 @@
+
 .footer {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -58,6 +59,7 @@
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: var(--secondary-text-color);
+    transition: var(--hover-animation);
 }
 
 .address-mail-link {
@@ -67,8 +69,10 @@
     letter-spacing: -0.02em;
    
     color: var(--secondary-text-color);
+    transition: var(--hover-animation);
 
 }
+
 .footer-soc-link {
     color: var(--secondary-text-color);
     transition: var( --hover-animation);
@@ -95,6 +99,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
+    transition: var(--hover-animation);
 
     color: var(--secondary-text-color);
 }
@@ -110,6 +115,22 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: block;
 }
+ .address-tel-link:is(:hover, :focus) {
+     color: var(--accent-color);
+ }
+
+ .address-mail-link:is(:hover, :focus) {
+     color: var(--accent-color);
+ }
+.footer-soc-link:is(:hover, :focus) {
+    color: var(--accent-color);
+
+}
+ .footer-menu-link:is(:hover, :focus) {
+     color: var(--accent-color);
+
+ }
+
  @media screen and (min-width: 768px) {
 .footer-thumb {
         
@@ -130,10 +151,7 @@
  }
 
  
-.footer-soc-link:is(:hover, :focus) {
-    color:var(--accent-color);
 
-}
  .footer-menu-item:not(:last-child) {
 
      margin-right: 24px;
@@ -167,15 +185,12 @@
      line-height: 1.21;
      margin-right: 124px;
  }
-   
-   
-    
 
- }
+}
  
 @media screen and (min-width: 1200px) {
-    .footer-logan-text {
-        margin-right: 543px;
+.footer-logan-text {
+    margin-right: 543px;
 }
 .social-links {
 
