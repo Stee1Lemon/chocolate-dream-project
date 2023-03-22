@@ -4,12 +4,13 @@
       overflow-y: auto;
     width: 300px;
     padding: 32px 24px;
+        text-align: center;
     background-color: var(--soft-color);
     border-radius: 15px;
-  
    
 }
 .header-modal-buy {
+
   margin-bottom: 32px;
         font-weight: 600;
         font-size: 20px;
@@ -28,7 +29,9 @@ border-radius: 15px;
 padding: 32px 32px 28px 32px;
 
         }
-     
+    .modal-shoko-list {
+        display: none;
+    } 
   .modal-text-item {
      display: inline-block;
      margin-top: 16px;
@@ -65,9 +68,7 @@ padding: 32px 32px 28px 32px;
     border-radius: 50%;
     background-color: grey;
 }
-.modal-shoko-item:not(:first-of-type){
-    display: none;
-}
+
 .modal-form {
     margin-top: 32px;
 
@@ -175,7 +176,10 @@ border: none;
             width: 311px;
   }}
 @media screen and (min-width: 768px) {
-.modal-buy-section {
+.modal-shoko-list-mob {
+    display: none;
+}
+    .modal-buy-section {
         min-width: 610px;
         padding: 48px;
     }
