@@ -20,8 +20,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/chocolate-dream-project/assets/index-1ff5ff64.js"></script>
-    <link rel="stylesheet" href="/chocolate-dream-project/assets/index-76b6a8c0.css">
+    <script type="module" crossorigin src="/chocolate-dream-project/assets/index-d72b4373.js"></script>
+    <link rel="stylesheet" href="/chocolate-dream-project/assets/index-c673c78f.css">
   </head>
   <body>
     <!-- Olena Rudnieva -->
@@ -923,7 +923,7 @@
     <button
       type="submit"
       class="mod-btn js-open-modal js-modal-close"
-      data-modal="modal-thank"
+      data-modal-thank-open data-modal="modal-thank"
     >
       submit
     </button>
@@ -973,58 +973,106 @@
     <!-- Кнопка в reviews -->
 <div class="modal modal-review" data-modal="modal-review">
   <!--   Svg иконка для закрытия окна  -->
-   <button class="modal-review-close-btn js-modal-close" data-modal-close type="button">
-          <svg class="modal-review-close-icon">
-            <use href="/chocolate-dream-project/assets/symbol-9f6b6e3b.svg#icon-close"></use>
-          </svg>
-    </button>
-     <h2 class="modal-review-title">leave a review
-        about <span class="modal-review-accent-color">our chocolate</span></h2>
-        <form class="review-modal-form">
-          <label class="modal-review-field">            
-            <input class="review-modal-input" name="user-name" type="text" placeholder="Name" required minlength="2" pattern="[a-zA-Zа-яА-ЯїЇ]+">
-         </label>
-        <label class="modal-review-field">        
-            <input class="review-modal-input" name="user-email" type="email" placeholder="Enter your email" required>
-        </label>
-          <label class="modal-review-field">  
-            <span class="phone-code">+380</span>         
-            <input class="review-modal-input phone-input" name="user-phone" type="tel" title="XXX-XXX-XX-XX" placeholder="Phone number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
-          </label>
-          <label class="modal-review-field">
-            <textarea class=" review-modal-input review-modal-message" name="user-text" placeholder="Enter text"></textarea>
-          </label>
-        </form> 
-  
-    <button type="submit" class="review-send-btn js-open-modal js-modal-close" data-modal="modal-feedback">Send</button>
-</div>
-
-
-    <!-- Кнопка в review -->
-<div class="modal modal-thank" data-modal="modal-feedback">
-  <!--   Svg иконка для закрытия окна  -->
-  <button class="modal-thank-close-btn js-modal-close" type="button">
-      <svg class="modal-thank-close-icon">
-          <use href="/chocolate-dream-project/assets/symbol-9f6b6e3b.svg#icon-close"></use>
-      </svg>
-  </button>
-    <p class="modal-thank-title">THANK YOU <br> FOR YOUR FEEDBACK!</p>
-    <p class="modal-thank-review-text">We are so happy to hear from you!</p>
-</div>
-
-
-    <!-- Кнопка в Buy now -->
-<div class="modal modal-thank" data-modal="modal-thank">
-  <!--   Svg иконка для закрытия окна  -->
-  <button class="modal-thank-close-btn js-modal-close" data-modal-close type="button">
-    <svg class="modal-thank-close-icon">
+  <button
+    class="modal-review-close-btn js-modal-close"
+    data-modal-close
+    type="button"
+  >
+    <svg class="modal-review-close-icon">
       <use href="/chocolate-dream-project/assets/symbol-9f6b6e3b.svg#icon-close"></use>
     </svg>
   </button>
-  
-  <p class="modal-thank-title">THANK YOU!</p>
-  <p class="modal-thank-text">We are glad that you ordered our chocolate and we are giving you a 20% discount on all our products.</p>
+  <h2 class="modal-review-title">
+    leave a review about
+    <span class="modal-review-accent-color">our chocolate</span>
+  </h2>
+  <form class="review-modal-form">
+    <label class="modal-review-field">
+      <input
+        class="review-modal-input"
+        name="user-name"
+        type="text"
+        placeholder="Name"
+        required
+        minlength="2"
+        pattern="[a-zA-Zа-яА-ЯїЇ]+"
+      />
+    </label>
+    <label class="modal-review-field">
+      <input
+        class="review-modal-input"
+        name="user-email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+    </label>
+    <label class="modal-review-field">
+      <span class="phone-code">+380</span>
+      <input
+        class="review-modal-input phone-input"
+        name="user-phone"
+        type="tel"
+        title="XXX-XXX-XX-XX"
+        placeholder="Phone number"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+      />
+    </label>
+    <label class="modal-review-field">
+      <textarea
+        class="review-modal-input review-modal-message"
+        name="user-text"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
+  </form>
+
+  <button
+    type="submit"
+    class="review-send-btn js-open-modal js-modal-close"
+    data-modal="modal-feedback"
+    data-modal-feedback-open
+  >
+    Send
+  </button>
 </div>
+
+    <!-- Кнопка в review -->
+<div class="backdrop visually-hidden" data-modal-feedback>
+  <div class="modal modal-thank" data-modal="modal-feedback">
+    <!--   Svg иконка для закрытия окна  -->
+    <button class="modal-thank-close-btn" data-modal-feedback-close type="button">
+      <svg class="modal-thank-close-icon">
+        <use href="/chocolate-dream-project/assets/symbol-9f6b6e3b.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-thank-title">
+      THANK YOU <br />
+      FOR YOUR FEEDBACK!
+    </p>
+    <p class="modal-thank-review-text">We are so happy to hear from you!</p>
+  </div>
+</div>
+
+    <!-- Кнопка в Buy now -->
+<div class="backdrop visually-hidden" data-modal-thank>
+  <div class="modal modal-thank" data-modal="modal-thank">
+    <!--   Svg иконка для закрытия окна  -->
+    <button class="modal-thank-close-btn" data-modal-thank-close type="button">
+      <svg class="modal-thank-close-icon">
+        <use href="/chocolate-dream-project/assets/symbol-9f6b6e3b.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal-thank-title">THANK YOU!</p>
+    <p class="modal-thank-text">
+      We are glad that you ordered our chocolate and we are giving you a 20%
+      discount on all our products.
+    </p>
+  </div>
+</div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script
