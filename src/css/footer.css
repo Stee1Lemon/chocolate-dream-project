@@ -52,6 +52,7 @@
     color: var(--secondary-text-color);
 }
 .address-tel-link {
+    
     margin-bottom: 4px;
     display: inline-block;
     font-style: normal;
@@ -106,7 +107,7 @@
 
  
 .page-links {
-    padding-top: 32px;
+    margin-top: 32px;
 }
 
 .menu-item::before {
@@ -132,22 +133,31 @@
  }
 
  @media screen and (min-width: 768px) {
-.footer-thumb {
-        
-    flex-direction: row;
+.footer {
+     padding-top: 50px;
+     padding-bottom: 50px;
+}
+
+    .footer-thumb {
+     flex-direction: row;
     
-        }
+ }
                
  .social-links {
      display: flex;
      position: static;
      margin-top: 0px;
-     gap: 17px;
+     margin-left: 52px;
+     gap: 21px;
      align-self: flex-start;
+     
  }
- 
+ .flex-div {
+    margin-bottom: 50px;
+ }
  .page-links {
      display: flex;
+     margin-top: 24px;
  }
 
  
@@ -157,19 +167,11 @@
      margin-right: 24px;
  }
 
- .page-links {
-     padding-top: 24px;
- }
 
  .footer-menu-item:not(:last-child) {
      margin-bottom: 0px;
  }
 
- .social-links {
-    
-    margin-left: 52px;
-     gap: 19px;
- }
 
  .icon-twitter {
      border: 2px solid var(--secondary-text-color);
@@ -184,6 +186,7 @@
      font-size: 28px;
      line-height: 1.21;
      margin-right: 124px;
+     margin-bottom: 0px;
  }
 
 }
@@ -195,7 +198,10 @@
 .social-links {
 
    margin-left: 65px;
-    gap: 21px;
+    
+}
+.flex-div {
+    margin-bottom: 54px;
 }
 
 }
