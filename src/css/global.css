@@ -22,9 +22,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--soft-color);
 }
-/* body .no-scroll {
-  overflow: hidden;
-} */
+
+.hystmodal__opened {
+
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
