@@ -115,7 +115,7 @@ iframe {
     list-style-type: initial;
     padding-left: 14px;
 }
-.how-made-list-title {
+.how-made-list-title > p {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
