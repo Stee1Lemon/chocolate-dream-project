@@ -1,5 +1,6 @@
 import './mobile-menu.js';
 import './modal.js';
-import './review-slider';
-import './product-slider';
-import './no-scroll-top';
+import './review-slider.js';
+import './product-slider.js';
+import './modal-thank.js';
+import './modal-feedback.js';

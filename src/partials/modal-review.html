@@ -1,29 +1,67 @@
 <!-- Кнопка в reviews -->
 <div class="modal modal-review" data-modal="modal-review">
   <!--   Svg иконка для закрытия окна  -->
-   <button class="modal-review-close-btn js-modal-close" data-modal-close type="button">
-          <svg class="modal-review-close-icon">
-            <use href="/img/symbol.svg#icon-close"></use>
-          </svg>
-    </button>
-     <h2 class="modal-review-title">leave a review
-        about <span class="modal-review-accent-color">our chocolate</span></h2>
-        <form class="review-modal-form">
-          <label class="modal-review-field">            
-            <input class="review-modal-input" name="user-name" type="text" placeholder="Name" required minlength="2" pattern="[a-zA-Zа-яА-ЯїЇ]+">
-         </label>
-        <label class="modal-review-field">        
-            <input class="review-modal-input" name="user-email" type="email" placeholder="Enter your email" required>
-        </label>
-          <label class="modal-review-field">  
-            <span class="phone-code">+380</span>         
-            <input class="review-modal-input phone-input" name="user-phone" type="tel" title="XXX-XXX-XX-XX" placeholder="Phone number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
-          </label>
-          <label class="modal-review-field">
-            <textarea class=" review-modal-input review-modal-message" name="user-text" placeholder="Enter text"></textarea>
-          </label>
-        </form> 
-  
-    <button type="submit" class="review-send-btn js-open-modal js-modal-close" data-modal="modal-feedback">Send</button>
-</div>
+  <button
+    class="modal-review-close-btn js-modal-close"
+    data-modal-close
+    type="button"
+  >
+    <svg class="modal-review-close-icon">
+      <use href="/img/symbol.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal-review-title">
+    leave a review about
+    <span class="modal-review-accent-color">our chocolate</span>
+  </h2>
+  <form class="review-modal-form">
+    <label class="modal-review-field">
+      <input
+        class="review-modal-input"
+        name="user-name"
+        type="text"
+        placeholder="Name"
+        required
+        minlength="2"
+        pattern="[a-zA-Zа-яА-ЯїЇ]+"
+      />
+    </label>
+    <label class="modal-review-field">
+      <input
+        class="review-modal-input"
+        name="user-email"
+        type="email"
+        placeholder="Enter your email"
+        required
+      />
+    </label>
+    <label class="modal-review-field">
+      <span class="phone-code">+380</span>
+      <input
+        class="review-modal-input phone-input"
+        name="user-phone"
+        type="tel"
+        title="XXX-XXX-XX-XX"
+        placeholder="Phone number"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+      />
+    </label>
+    <label class="modal-review-field">
+      <textarea
+        class="review-modal-input review-modal-message"
+        name="user-text"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
+  </form>
 
+  <button
+    type="submit"
+    class="review-send-btn js-open-modal js-modal-close"
+    data-modal="modal-feedback"
+    data-modal-feedback-open
+  >
+    Send
+  </button>
+</div>
