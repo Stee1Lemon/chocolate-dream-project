@@ -32,6 +32,17 @@ padding: 32px 32px 28px 32px;
     .modal-shoko-list {
         display: none;
     } 
+    .modal-shoko-list-mob.slick-dotted.slick-slider {
+        margin-bottom: 62px;
+    }
+.slick-initialized .slick-slide{
+margin: 0 auto;
+        }
+ .modal-shoko-list-mob {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+ }
   .modal-text-item {
      display: inline-block;
      margin-top: 16px;
@@ -45,34 +56,10 @@ padding: 32px 32px 28px 32px;
         color:var(--text-color);
   }
 .modal-form {
-    text-align: left;
-}
-.reviews__pagination {
-    margin-top: 14px;
-    width: auto;
-    text-align: center;
+     text-align: left;
 }
 
-.reviews__pag-active {
-    display: inline-flex;
-    width: 28px;
-    height: 13px;
-    border-radius: calc(13px / 2);
-    background-color:var(--accent-color);
-}
 
-.reviews__pag-pass {
-    display: inline-flex;
-    height: 13px;
-    width: 13px;
-    border-radius: 50%;
-    background-color: grey;
-}
-
-.modal-form {
-    margin-top: 32px;
-
-}
 .personal-name {
  
     margin-bottom: 18px;
