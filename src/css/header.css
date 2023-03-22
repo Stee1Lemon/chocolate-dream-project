@@ -55,6 +55,8 @@
     position: fixed;
     width: 60%;
     height: 100%;
+    max-width: 812px;
+    overflow: scroll;
     top: 0;
     right: 0;
     z-index: 999;
@@ -182,6 +184,7 @@
 
     .header-mobile-menu {
         width: 290px;
+        max-width: 1024px;
     }
 
     .header-mobile-menu-close {

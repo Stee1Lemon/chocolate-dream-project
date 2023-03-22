@@ -1,8 +1,6 @@
-.components > .container {
+.components {
   padding-bottom: 72px;
   padding-top: 72px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .components-title-text {
   margin-bottom: 32px;
@@ -169,11 +167,9 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .components > .container {
+  .components {
     padding-bottom: 100px;
     padding-top: 100px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
   .components-title-text {
     margin-bottom: 50px;
@@ -195,7 +191,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .components > .container {
+  .components {
     padding-bottom: 128px;
     padding-top: 128px;
   }
