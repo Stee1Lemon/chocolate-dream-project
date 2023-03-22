@@ -1,10 +1,13 @@
 .products{
     padding: 92px 0;
 }
+
 .products_title{
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    text-align: center;
+    text-transform: uppercase;
     margin-bottom: 32px;
 }
 .title-accent-color{
@@ -21,7 +24,6 @@
     padding: 32px 20px;
     background-color: var(--main-bg-color);
     text-align: center;
-    margin-right: 18px;
 }
 .products_img{
     width: 230px;
@@ -63,6 +65,9 @@
 .products_currency{
     margin-left: 6px;
     text-transform: uppercase;
+}
+.slick-initialized .slick-slide {
+margin-right: 18px;
 }
 .products_list .slick-track{
     display: flex; 
