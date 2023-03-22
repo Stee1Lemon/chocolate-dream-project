@@ -3,7 +3,10 @@
 }
 
 .products_title{
-   text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 32px;
 }
